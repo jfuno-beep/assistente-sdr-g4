@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pt-BR"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1">&lt;title&gt;Assistente de Pré-Vendas G4&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>* { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f5f7; color: #1f2937; padding: 24px 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wrap { max-width: 760px; margin: 0 auto; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.head { display: flex; align-items: center; gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.logo { width: 34px; height: 34px; border-radius: 9px; background: #111827; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h1 { font-size: 20px; font-weight: 600; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub { color: #6b7280; font-size: 14px; margin: 4px 0 18px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.row { display: flex; gap: 10px; margin-bottom: 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>input { flex: 1; height: 44px; padding: 0 14px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 15px; outline: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>input:focus { border-color: #111827; box-shadow: 0 0 0 3px rgba(17,24,39,.12); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>button.go { height: 44px; padding: 0 22px; border: none; border-radius: 10px; background: #111827; color: #fff; font-weight: 500; font-size: 15px; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>button.go:disabled { opacity: .5; cursor: not-allowed; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.chip { font-size: 13px; padding: 5px 12px; border-radius: 999px; background: #fff; border: 1px solid #e5e7eb; color: #4b5563; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.status { text-align: center; color: #6b7280; padding: 40px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; border-radius: 10px; padding: 12px; font-size: 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert .d { margin-top: 6px; font-size: 12px; font-family: monospace; color: #ef4444; word-break: break-word; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.warn { background: #fffbeb; border: 1px solid #fde68a; color: #b45309; border-radius: 10px; padding: 9px 12px; font-size: 12px; font-family: monospace; margin-bottom: 12px; word-break: break-word; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tag { display: inline-block; background: #111827; color: #fff; font-weight: 500; padding: 5px 14px; border-radius: 9px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.copy { font-size: 13px; padding: 7px 12px; border: 1px solid #d1d5db; border-radius: 9px; background: #fff; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 13px; padding: 14px 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card.wide { grid-column: 1 / -1; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card h3 { font-size: 14px; font-weight: 600; margin-bottom: 9px; display: flex; align-items: center; gap: 7px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.dot { width: 9px; height: 9px; border-radius: 3px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card ul { list-style: none; } .card li { font-size: 13px; color: #4b5563; line-height: 1.55; margin-bottom: 7px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card li b { color: #111827; font-weight: 600; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.vocab span { display: inline-block; background: #f3f4f6; color: #374151; font-size: 12px; padding: 4px 10px; border-radius: 7px; margin: 0 6px 6px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.empty { text-align: center; color: #9ca3af; padding: 50px 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gate { max-width: 360px; margin: 60px auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 22px; text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gate input { width: 100%; margin: 14px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gate button { width: 100%; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="head"&gt;&lt;div class="logo"&gt;G4&lt;/div&gt;&lt;h1&gt;Assistente de Pré-Vendas&lt;/h1&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sub"&gt;Inteligência de mercado + playbook por segmento, para a chamada&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="gate" class="gate" style="display:none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-weight:600;margin-bottom:4px"&gt;Código de acesso&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-size:13px;color:#6b7280"&gt;Peça ao seu coordenador&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="password" id="code" placeholder="••••••" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="go" id="enter" style="width:100%"&gt;Entrar&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="app" style="display:none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" id="segmento" placeholder="Ex: Construtoras, Clínicas, E-commerce de moda..." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="go" id="analisar"&gt;Analisar&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="chips" id="chips"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="output"&gt;&lt;div class="empty"&gt;Digite o segmento do lead para gerar o briefing.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;script src="app.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">/* fallback: inline para quem salvar sem app.js separado */</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const $ = (id) =&gt; document.getElementById(id);</p>
+<p class="p1">const esc = (s) =&gt; String(s==null?"":s).replace(/[&amp;&lt;&gt;"]/g,(c)=&gt;({"&amp;":"&amp;amp;","&lt;":"&amp;lt;","&gt;":"&amp;gt;",'"':"&amp;quot;"}[c]));</p>
+<p class="p1">let history = [];</p>
+<p class="p1">let CODE = sessionStorage.getItem("g4_code") || "";</p>
+<p class="p2"><br></p>
+<p class="p1">function showApp(){ $("gate").style.display="none"; $("app").style.display="block"; }</p>
+<p class="p1">if (CODE) showApp(); else $("gate").style.display="block";</p>
+<p class="p2"><br></p>
+<p class="p1">$("enter").addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>CODE = $("code").value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>sessionStorage.setItem("g4_code", CODE);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>showApp();</p>
+<p class="p1">});</p>
+<p class="p1">$("analisar").addEventListener("click", () =&gt; analisar());</p>
+<p class="p1">$("segmento").addEventListener("keydown", (e) =&gt; { if (e.key === "Enter") analisar(); });</p>
+<p class="p2"><br></p>
+<p class="p1">async function getPart(segmento, kind) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const r = await fetch("/api/briefing", {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>method: "POST",</p>
+<p class="p1"><span class="Apple-converted-space">    </span>headers: { "Content-Type": "application/json", "x-access-code": CODE },</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body: JSON.stringify({ segmento, kind }),</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!r.ok) { const e = await r.json().catch(() =&gt; ({})); throw new Error(e.error || ("HTTP " + r.status)); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return r.json();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">async function analisar(seg) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const target = (seg || $("segmento").value).trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!target) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("segmento").value = target;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("analisar").disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("output").innerHTML = '&lt;div class="status"&gt;Analisando mercado e montando o playbook…&lt;/div&gt;';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>let mercado=null, playbook=null, err="";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const [rM, rP] = await Promise.allSettled([getPart(target,"mercado"), getPart(target,"playbook")]);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (rM.status==="fulfilled") mercado=rM.value; else err="Mercado: "+rM.reason.message;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (rP.status==="fulfilled") playbook=rP.value; else err=(err?err+" | ":"")+"Playbook: "+rP.reason.message;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("analisar").disabled = false;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!mercado &amp;&amp; !playbook) { $("output").innerHTML = `&lt;div class="alert"&gt;Não consegui gerar o briefing.&lt;div class="d"&gt;${esc(err)}&lt;/div&gt;&lt;/div&gt;`; return; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!history.includes(target)) { history=[target,...history].slice(0,6); renderChips(); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render({ segmento: target, ...(mercado||{}), ...(playbook||{}) }, err);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function renderChips(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("chips").innerHTML = history.map((h)=&gt;`&lt;span class="chip" data-s="${esc(h)}"&gt;${esc(h)}&lt;/span&gt;`).join("");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll(".chip").forEach((c)=&gt;c.addEventListener("click",()=&gt;analisar(c.dataset.s)));</p>
+<p class="p1">}</p>
+<p class="p1">const li = (a)=&gt;(a||[]).map((x)=&gt;`&lt;li&gt;${esc(x)}&lt;/li&gt;`).join("");</p>
+<p class="p2"><br></p>
+<p class="p1">function render(b, err){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const card=(c,t,inner,wide)=&gt;`&lt;div class="card${wide?' wide':''}"&gt;&lt;h3&gt;&lt;span class="dot" style="background:${c}"&gt;&lt;/span&gt;${t}&lt;/h3&gt;${inner}&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let h="";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (err) h+=`&lt;div class="warn"&gt;Parcial — ${esc(err)}&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h+=`&lt;div class="bar"&gt;&lt;span class="tag"&gt;${esc(b.segmento)}&lt;/span&gt;&lt;button class="copy" id="cp"&gt;Copiar briefing&lt;/button&gt;&lt;/div&gt;&lt;div class="grid"&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.dores_principais) h+=card("#dc2626","Principais dores",`&lt;ul&gt;${li(b.dores_principais)}&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.mercado) h+=card("#059669","Mercado no Brasil",`&lt;ul&gt;&lt;li&gt;${esc(b.mercado.resumo)}&lt;/li&gt;&lt;li&gt;&lt;b&gt;${esc(b.mercado.numeros)}&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.noticias) h+=card("#2563eb","Notícias recentes",`&lt;ul&gt;${(b.noticias||[]).map(n=&gt;`&lt;li&gt;&lt;b&gt;${esc(n.titulo)}&lt;/b&gt; — ${esc(n.contexto)}&lt;/li&gt;`).join("")}&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.tendencias) h+=card("#d97706","Tendências 2026/2027",`&lt;ul&gt;${li(b.tendencias)}&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.perfil_decisor) h+=card("#7c3aed","Perfil do decisor",`&lt;ul&gt;&lt;li&gt;${esc(b.perfil_decisor)}&lt;/li&gt;&lt;/ul&gt;`,true);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.gatilhos) h+=card("#4f46e5","Gatilhos de conexão (G4)",`&lt;ul&gt;${li(b.gatilhos)}&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.perguntas_spin) h+=card("#0d9488","Perguntas de descoberta",`&lt;ul&gt;${li(b.perguntas_spin)}&lt;/ul&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.objecoes) h+=card("#db2777","Objeções + contorno",`&lt;ul&gt;${(b.objecoes||[]).map(o=&gt;`&lt;li&gt;&lt;b&gt;"${esc(o.objecao)}"&lt;/b&gt;&lt;br&gt;→ ${esc(o.resposta)}&lt;/li&gt;`).join("")}&lt;/ul&gt;`,true);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (b.vocabulario) h+=card("#6b7280","Vocabulário do setor",`&lt;div class="vocab"&gt;${(b.vocabulario||[]).map(v=&gt;`&lt;span&gt;${esc(v)}&lt;/span&gt;`).join("")}&lt;/div&gt;`,true);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h+="&lt;/div&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>$("output").innerHTML=h;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const cp=$("cp");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (cp) cp.addEventListener("click",()=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const t=`BRIEFING — ${b.segmento}\n\nDORES\n${(b.dores_principais||[]).map(x=&gt;"- "+x).join("\n")}\n\nMERCADO\n${b.mercado?.resumo||""}\n${b.mercado?.numeros||""}\n\nNOTÍCIAS\n${(b.noticias||[]).map(n=&gt;"- "+n.titulo+" — "+n.contexto).join("\n")}\n\nTENDÊNCIAS\n${(b.tendencias||[]).map(x=&gt;"- "+x).join("\n")}\n\nPERFIL\n${b.perfil_decisor||""}\n\nGATILHOS\n${(b.gatilhos||[]).map(x=&gt;"- "+x).join("\n")}\n\nPERGUNTAS\n${(b.perguntas_spin||[]).map(x=&gt;"- "+x).join("\n")}\n\nOBJEÇÕES\n${(b.objecoes||[]).map(o=&gt;'- "'+o.objecao+'" → '+o.resposta).join("\n")}\n\nVOCABULÁRIO\n${(b.vocabulario||[]).join(", ")}`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>navigator.clipboard.writeText(t); cp.textContent="Copiado ✓"; setTimeout(()=&gt;cp.textContent="Copiar briefing",1500);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
